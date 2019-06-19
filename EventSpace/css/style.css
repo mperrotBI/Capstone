@@ -1091,7 +1091,8 @@ a.hover-reverse:hover, a.hover-reverse:focus, a.hover-reverse:active {
 }
 
 .page-title {
-  margin-top: 200px;
+/* Changed - MP */
+  margin-top: 130px;
   text-align: left;
   float: left;
   width: 100%;
@@ -1809,11 +1810,13 @@ a.hover-reverse:hover, a.hover-reverse:focus, a.hover-reverse:active {
 }
 
 .flexslider.page-inner, .flexslider2.page-inner {
-  height: 400px;
+ /* Changed - MP */
+  height: 250px;
 }
 
 .flexslider.page-inner .slides > li, .flexslider2.page-inner .slides > li {
-  height: 400px;
+/* Changed - MP */
+  height: 250px;
 }
 
 .flexslider .btn, .flexslider2 .btn {
