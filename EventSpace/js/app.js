@@ -4,7 +4,7 @@ var desc = document.getElementById("desc");
 var price = document.getElementById("price");
 var lo = document.getElementById("location");
 var fire = document.getElementById("fire");
-//>>>>>>> .r15
+
 
 var submitBtn = document.getElementById("submitBtn");
 var fireHeading = document.getElementById("fireHeading");
