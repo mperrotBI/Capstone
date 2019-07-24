@@ -40,8 +40,8 @@
           </ul>
           <div class="extra-text visible-xs">
             <a href="#" class="probootstrap-burger-menu"><i>Menu</i></a>
-            <!-- <h5>Address</h5>
-            <p>198 West 21th Street, Suite 721 New York NY 10016</p> -->
+            <h5>Address</h5>
+            <p>198 West 21th Street, Suite 721 New York NY 10016</p>
             <h5>Connect</h5>
             <ul class="social-buttons">
               <li><a href="#"><i class="icon-twitter"></i></a></li>
@@ -82,44 +82,11 @@
   <section class="probootstrap-section probootstrap-section-lighter">
     <div class="container">
       <div class="row">
-        <div class="col-md-4 col-sm-6">
-          <div class="probootstrap-card probootstrap-listing">
-            <div class="probootstrap-card-media">
-              <img src="img/slider_1.jpg" class="img-responsive" alt="Free HTML5 Template by uicookies.com">
-              <a href="#" class="probootstrap-love"><i class="icon-heart"></i></a>
-            </div>
-            <div class="probootstrap-card-text">
-              <h2 class="probootstrap-card-heading"><a href="#">3 Bed Room Property for Sale</a></h2>
-              <div class="probootstrap-listing-location">
-                <i class="icon-location2"></i> <span>360 W Wellington Chicago, IL 60657</span>
-              </div>
-              <div class="probootstrap-listing-category for-sale"><span>for sale</span></div>
-              <div class="probootstrap-listing-price"><strong>$ 1,121,000</strong> / month</div>
-            </div>
-            <div class="probootstrap-card-extra">
-              <ul>
-                <li>
-                  Area
-                  <span>2400 m2</span>
-                </li>
-                <li>
-                  Beds
-                  <span>3</span>
-                </li>
-                <li>
-                  Baths
-                  <span>2</span>
-                </li>
-                <li>
-                  Garages
-                  <span>1</span>
-                </li>
-              </ul>
-            </div>
-          </div>
-          <!-- END listing -->
-        </div>
-        <div class="col-md-4 col-sm-6">
+        <div class="col-md-4 col-sm-6" id="listing">
+
+        <!-- END listing -->
+
+        <!--<div class="col-md-4 col-sm-6">
           <div class="probootstrap-card probootstrap-listing">
             <div class="probootstrap-card-media">
               <img src="img/slider_2.jpg" class="img-responsive" alt="Free HTML5 Template by uicookies.com">
@@ -154,8 +121,7 @@
               </ul>
             </div>
           </div>
-          <!-- END listing -->
-        </div>
+       </div>
         <div class="clearfix visible-sm-block"></div>
         <div class="col-md-4 col-sm-6">
           <div class="probootstrap-card probootstrap-listing">
@@ -192,8 +158,8 @@
               </ul>
             </div>
           </div>
-          <!-- END listing -->
-        </div>
+           END listing -->
+        <!--</div>
         <div class="col-md-4 col-sm-6">
           <div class="probootstrap-card probootstrap-listing">
             <div class="probootstrap-card-media">
@@ -229,8 +195,8 @@
               </ul>
             </div>
           </div>
-          <!-- END listing -->
-        </div>
+           END listing -->
+        <!--</div>
         <div class="clearfix visible-sm-block"></div>
         <div class="col-md-4 col-sm-6">
           <div class="probootstrap-card probootstrap-listing">
@@ -267,8 +233,8 @@
               </ul>
             </div>
           </div>
-          <!-- END listing -->
-        </div>
+           END listing -->
+        <!--</div>
         <div class="col-md-4 col-sm-6">
           <div class="probootstrap-card probootstrap-listing">
             <div class="probootstrap-card-media">
@@ -304,10 +270,14 @@
               </ul>
             </div>
           </div>
-          <!-- END listing -->
+          END listing -->
         </div>
+        <div class="col-md-4 col-sm-6" id="listing2">
+
       </div>
+      <div class="col-md-4 col-sm-6" id="listing3">
     </div>
+
   </section>
 
 
@@ -454,6 +424,32 @@
   <div class="gototop js-top">
     <a href="#" class="js-gotop"><i class="icon-chevron-thin-up"></i></a>
   </div>
+
+  <!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/6.3.1/firebase.js"></script>
+<script src="https://www.gstatic.com/firebasejs/6.3.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/3.1.0/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/3.1.0/firebase-database.js"></script>
+<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#config-web-app -->
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyBNvUbAV8IlWG75v1rQ9SgtmYlYEHDCe1o",
+    authDomain: "eventspace-25703.firebaseapp.com",
+    databaseURL: "https://eventspace-25703.firebaseio.com",
+    projectId: "eventspace-25703",
+    storageBucket: "eventspace-25703.appspot.com",
+    messagingSenderId: "981825218107",
+    appId: "1:981825218107:web:cd6f16dd55a7a71f"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+</script>
+<script src="js/properties.js"></script>
 
   <script src="js/scripts.min.js"></script>
   <script src="js/main.min.js"></script>
