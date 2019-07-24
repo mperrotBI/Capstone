@@ -37,11 +37,3 @@
 var firebase = require('firebase/app');
 require('firebase/auth');
 require('firebase/database');
-
-
-/*"<div class='probootstrap-card-media'><img src='img/slider_1.jpg' class='img-responsive' alt='Free HTML5 Template by uicookies.com'>" +
-"<a href='#' class='probootstrap-love'><i class='icon-heart'></i></a></div><div class='probootstrap-card-text'>" +
-"<h2 class='probootstrap-card-heading'><a href='#'>" +  title + "</a></h2><div class='probootstrap-listing-location'>" +
-"<i class='icon-location2'></i> <span>" + loc + "</span></div><div class='probootstrap-listing-category for-sale'><span>for sale</span></div><div class='probootstrap-listing-price'><strong>$" +
-price + "</strong> / month</div></div><div class='probootstrap-card-extra'><ul>" +
-"<li>Area<span>2400 m2</span></li><li>Beds<span>3</span></li><li>Baths<span>2</span></li><li>Garages<span>1</span></li></ul></div></div></div>"*/
