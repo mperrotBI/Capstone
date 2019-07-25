@@ -32,8 +32,8 @@
 
         <nav role="navigation" class="probootstrap-nav hidden-xs">
           <ul class="probootstrap-main-nav">
-            <li class="active"><a href="index.html">Home</a></li>
-            <li><a href="properties.html">Properties</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li class="active"><a href="properties.html">Properties</a></li>
             <li><a href="events.html">Venues</a></li>
             <li><a href="about.html">About</a></li>
             <li><a href="profile.html">Profile</a></li>
@@ -187,15 +187,8 @@
   <section class="probootstrap-section probootstrap-section-lighter">
     <div class="container">
       <div class="row heading">
-        <h2 class="mt0 mb50 text-center">Title</h2>
-        <h3 class="mt0 mb50 text-center">Price</h3>
-  <section class="jumbotron">
-    <div class="image-wrap">
-      <div class="image" style="background-image: url(img/slider_5.jpg);"></div>
-    </div>
-    <div class="text">
-      <h3 class="mt0 mb40">Description</h3>
-      <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
+      <div id="details">
+
     </div>
   </section>
   <!-- END: section -->
@@ -316,7 +309,30 @@
     <a href="#" class="js-gotop"><i class="icon-chevron-thin-up"></i></a>
   </div>
 
+  <!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/6.3.1/firebase.js"></script>
+<script src="https://www.gstatic.com/firebasejs/6.3.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/3.1.0/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/3.1.0/firebase-database.js"></script>
+<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
 
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#config-web-app -->
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyBNvUbAV8IlWG75v1rQ9SgtmYlYEHDCe1o",
+    authDomain: "eventspace-25703.firebaseapp.com",
+    databaseURL: "https://eventspace-25703.firebaseio.com",
+    projectId: "eventspace-25703",
+    storageBucket: "eventspace-25703.appspot.com",
+    messagingSenderId: "981825218107",
+    appId: "1:981825218107:web:cd6f16dd55a7a71f"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+</script>
   <script src="js/scripts.min.js"></script>
   <script src="js/main.min.js"></script>
   <script src="js/custom.js"></script>
