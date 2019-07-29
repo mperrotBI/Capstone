@@ -62,14 +62,14 @@
           <div class="col-md-8 col-md-offset-2">
 
             <div class="probootstrap-home-search probootstrap-animate">
-              <form action="" method="post">
+              <!--<form action="results.html" method="post">-->
                 <h2 class="heading">Search for your space here</h2>
                 <div class="probootstrap-field-group">
                   <div class="probootstrap-fields">
 
                     <div class="search-field">
                       <i class="icon-location2"></i>
-                      <input type="text" class="form-control" placeholder="Enter address / Zip Code">
+                      <input type="text" id="locTag" class="form-control" placeholder="Enter address / Zip Code">
                     </div>
                     <div class="search-category">
                       <i class="icon-chevron-down"></i>
@@ -79,9 +79,9 @@
                       </select>
                     </div>
                   </div>
-                  <button class="btn btn-success" type="submit"><i class="icon-magnifying-glass t2"></i> Start Search</button>
+                  <button type="submit" class="btn btn-success" onClick="main()">Start Search</button>
                 </div>
-              </form>
+          <!--  </form>-->
               <!--<p class="mb0 text-left"><small>A free HTML5 template by <a href="https://uicookies.com/">uicookies.com</a> under license <a href="https://uicookies.com/license">Creative Commons 3.0</a></small> </p> -->
             </div>
 
@@ -215,47 +215,14 @@
   <section class="probootstrap-section probootstrap-section-lighter">
     <div class="container">
       <div class="row heading">
-        <h2 class="mt0 mb50 text-center">Featured Listings</h2>
+        <h2 class="mt0 mb50 text-center">Search Results</h2>
       </div>
       <div class="row">
-        <div class="col-md-4 col-sm-6">
-          <div class="probootstrap-card probootstrap-listing">
-            <div class="probootstrap-card-media">
-              <img src="img/slider_1.jpg" class="img-responsive" alt="Free HTML5 Template by uicookies.com">
-              <a href="#" class="probootstrap-love"><i class="icon-heart"></i></a>
-            </div>
-            <div class="probootstrap-card-text">
-              <h2 class="probootstrap-card-heading"><a href="#">3 Bed Room Property for Sale</a></h2>
-              <div class="probootstrap-listing-location">
-                <i class="icon-location2"></i> <span>360 W Wellington Chicago, IL 60657</span>
-              </div>
-              <div class="probootstrap-listing-category for-sale"><span>for sale</span></div>
-              <div class="probootstrap-listing-price"><strong>$ 1,121,000</strong> / month</div>
-            </div>
-            <div class="probootstrap-card-extra">
-              <ul>
-                <li>
-                  Area
-                  <span>2400 m2</span>
-                </li>
-                <li>
-                  Beds
-                  <span>3</span>
-                </li>
-                <li>
-                  Baths
-                  <span>2</span>
-                </li>
-                <li>
-                  Garages
-                  <span>1</span>
-                </li>
-              </ul>
-            </div>
-          </div>
-          <!-- END listing -->
-        </div>
-        <div class="col-md-4 col-sm-6">
+        <div class="col-md-4 col-sm-6" id="results">
+
+        <!-- END listing -->
+
+        <!--<div class="col-md-4 col-sm-6">
           <div class="probootstrap-card probootstrap-listing">
             <div class="probootstrap-card-media">
               <img src="img/slider_2.jpg" class="img-responsive" alt="Free HTML5 Template by uicookies.com">
@@ -290,8 +257,7 @@
               </ul>
             </div>
           </div>
-          <!-- END listing -->
-        </div>
+       </div>
         <div class="clearfix visible-sm-block"></div>
         <div class="col-md-4 col-sm-6">
           <div class="probootstrap-card probootstrap-listing">
@@ -328,8 +294,8 @@
               </ul>
             </div>
           </div>
-          <!-- END listing -->
-        </div>
+           END listing -->
+        <!--</div>
         <div class="col-md-4 col-sm-6">
           <div class="probootstrap-card probootstrap-listing">
             <div class="probootstrap-card-media">
@@ -365,8 +331,8 @@
               </ul>
             </div>
           </div>
-          <!-- END listing -->
-        </div>
+           END listing -->
+        <!--</div>
         <div class="clearfix visible-sm-block"></div>
         <div class="col-md-4 col-sm-6">
           <div class="probootstrap-card probootstrap-listing">
@@ -403,8 +369,8 @@
               </ul>
             </div>
           </div>
-          <!-- END listing -->
-        </div>
+           END listing -->
+        <!--</div>
         <div class="col-md-4 col-sm-6">
           <div class="probootstrap-card probootstrap-listing">
             <div class="probootstrap-card-media">
@@ -440,11 +406,16 @@
               </ul>
             </div>
           </div>
-          <!-- END listing -->
+          END listing -->
         </div>
+        <div class="col-md-4 col-sm-6" id="results2">
+
       </div>
+      <div class="col-md-4 col-sm-6" id="results3">
     </div>
+
   </section>
+
 
  <!--
   <section class="probootstrap-half reverse">
@@ -634,10 +605,36 @@
     <a href="#" class="js-gotop"><i class="icon-chevron-thin-up"></i></a>
   </div>
 
+  <!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/6.3.1/firebase.js"></script>
+<!--<script src="https://www.gstatic.com/firebasejs/6.3.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/3.1.0/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/3.1.0/firebase-database.js"></script>-->
+<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
 
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#config-web-app -->
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyBNvUbAV8IlWG75v1rQ9SgtmYlYEHDCe1o",
+    authDomain: "eventspace-25703.firebaseapp.com",
+    databaseURL: "https://eventspace-25703.firebaseio.com",
+    projectId: "eventspace-25703",
+    storageBucket: "eventspace-25703.appspot.com",
+    messagingSenderId: "981825218107",
+    appId: "1:981825218107:web:cd6f16dd55a7a71f"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+</script>
+
+  <script src="js/search.js"></script>
   <script src="js/scripts.min.js"></script>
   <script src="js/main.min.js"></script>
   <script src="js/custom.js"></script>
+
 
   </body>
 </html>

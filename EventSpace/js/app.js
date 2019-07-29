@@ -8,7 +8,7 @@ function GetRandomInt(max){
   return Math.floor(Math.random() * Math.floor(max));
 }
 
-var submitBtn = document.getElementById("submitBtn");
+//var submitBtn = document.getElementById("submitBtn");
 var fireHeading = document.getElementById("fireHeading");
 
 var firebaseHeadingRef = firebase.database().ref().child("Heading");
