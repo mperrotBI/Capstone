@@ -15,9 +15,9 @@ function main(){
   var listingRef0 = database.ref("Listings/0");
   var listingRef1 = database.ref("Listings/1");
   var listingRef2 = database.ref("Listings/2");
-  listingRef0.orderByChild("Location").equalTo(searchLoc.value).on('child_added', function(snapshot) {
+  //listingRef0.orderByChild("Location").equalTo(searchLoc.value).on('child_added', function(snapshot) {
     listingRef0.orderByChild("Location").equalTo(searchLoc.value).on("child_added", snap => {
-    console.log(snapshot.val());
+    //console.log(snapshot.val());
     var title = snap.child("Title").val();
     var price = snap.child("Price").val();
     var desc = snap.child("Description").val();
@@ -28,11 +28,11 @@ function main(){
     "<i class='icon-location2'></i> <span>" + loc + "</span></div><div class='probootstrap-listing-category for-rent'><span>for rent</span></div><div class='probootstrap-listing-price'><strong>$" +
     price + "</strong> / month</div></div><div class='probootstrap-card-extra'><ul>" +
     "<li>Area<span>2400 m2</span></li><li>Beds<span>3</span></li><li>Baths<span>2</span></li><li>Garages<span>1</span></li></ul></div></div></div>");
-  });
+  //});
   }),
-  listingRef1.orderByChild("Location").equalTo(searchLoc.value).on('child_added', function(snapshot) {
+  //listingRef1.orderByChild("Location").equalTo(searchLoc.value).on('child_added', function(snapshot) {
     listingRef1.orderByChild("Location").equalTo(searchLoc.value).on("child_added", snap => {
-    console.log(snapshot.val());
+    //console.log(snapshot.val());
     var title = snap.child("Title").val();
     var price = snap.child("Price").val();
     var desc = snap.child("Description").val();
@@ -43,11 +43,11 @@ function main(){
     "<i class='icon-location2'></i> <span>" + loc + "</span></div><div class='probootstrap-listing-category for-rent'><span>for rent</span></div><div class='probootstrap-listing-price'><strong>$" +
     price + "</strong> / month</div></div><div class='probootstrap-card-extra'><ul>" +
     "<li>Area<span>2400 m2</span></li><li>Beds<span>3</span></li><li>Baths<span>2</span></li><li>Garages<span>1</span></li></ul></div></div></div>");
-  });
+  //});
   }),
-  listingRef2.orderByChild("Location").equalTo(searchLoc.value).on('child_added', function(snapshot) {
+  //listingRef2.orderByChild("Location").equalTo(searchLoc.value).on('child_added', function(snapshot) {
     listingRef2.orderByChild("Location").equalTo(searchLoc.value).on("child_added", snap => {
-    console.log(snapshot.key);
+    //console.log(snapshot.key);
     var title = snap.child("Title").val();
     var price = snap.child("Price").val();
     var desc = snap.child("Description").val();
@@ -58,7 +58,7 @@ function main(){
     "<i class='icon-location2'></i> <span>" + loc + "</span></div><div class='probootstrap-listing-category for-rent'><span>for rent</span></div><div class='probootstrap-listing-price'><strong>$" +
     price + "</strong> / month</div></div><div class='probootstrap-card-extra'><ul>" +
     "<li>Area<span>2400 m2</span></li><li>Beds<span>3</span></li><li>Baths<span>2</span></li><li>Garages<span>1</span></li></ul></div></div></div>");
-  });
+  //});
   },
   function err(){
     console.log(err);
