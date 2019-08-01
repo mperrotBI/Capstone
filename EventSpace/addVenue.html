@@ -36,7 +36,6 @@
             <li><a href="properties.html">Properties</a></li>
             <li><a href="events.html">Venues</a></li>
             <li><a href="about.html">About</a></li>
-            <li><a href="profile.html">Profile</a></li>
             <li><a href="add.html">Add Apartment</a></li>
             <li class="active"><a href="addVenue.html">Add Venue</a></li>
           </ul>
@@ -118,7 +117,8 @@
             </div>
             <div class="form-group">
               <label for="pic">Add Pictures</label>
-              <input type="file" multiple id="pic" name="pic"></input>
+              <progress value="0" max="100" id="uploader">0%</progress>
+              <input type="file" value="upload" id="fileButton">
             </div>
             <div class="form-group">
               <button type="submit" class="btn btn-primary" id="submitBtn" onClick="submitClick()">Submit</button>

@@ -62,23 +62,24 @@
 
             <div class="probootstrap-home-search probootstrap-animate">
               <!--<form action="results.html" method="post">-->
-                <h2 class="heading">Search for your space here</h2>
+                <h2 class="heading">Search for your space</h2>
                 <div class="probootstrap-field-group">
                   <div class="probootstrap-fields">
 
                     <div class="search-field">
                       <i class="icon-location2"></i>
-                      <input type="text" id="locTag" class="form-control" placeholder="Enter address / Zip Code">
+                      <input type="text" id="locTag" class="form-control" placeholder="Enter City">
                     </div>
                     <div class="search-category">
                       <i class="icon-chevron-down"></i>
-                      <select name="#" id="" class="form-control">
-                        <option value="">Properties</option>
-                        <option value="">Venues</option>
+                      <select name="sel" id="sel" onchange="showOptions(this)" class="form-control">
+                        <option value="nothing" selected="selected" disabled>Select</option>
+                        <option value="property">Properties</option>
+                        <option value="venue">Venues</option>
                       </select>
                     </div>
                   </div>
-                  <button type="submit" class="btn btn-success" onClick="main()">Start Search</button>
+                  <button type="submit" class="btn btn-success" onClick="main(sel.value)">Start Search</button>
                 </div>
           <!--  </form>-->
               <!--<p class="mb0 text-left"><small>A free HTML5 template by <a href="https://uicookies.com/">uicookies.com</a> under license <a href="https://uicookies.com/license">Creative Commons 3.0</a></small> </p> -->
@@ -89,9 +90,7 @@
       </div>
     </div>
     <ul class="slides">
-      <li style="background-image: url(img/slider_1.jpg);" class="overlay"></li>
-      <li style="background-image: url(img/slider_4.jpg);" class="overlay"></li>
-      <li style="background-image: url(img/slider_2.jpg);" class="overlay"></li>
+      <img src="https://firebasestorage.googleapis.com/v0/b/eventspace-25703.appspot.com/o/photos%2FSpirited-Away-Widescreen.png?alt=media&token=d2c3366c-13fd-4565-8da1-e63eaa5b280e" class="overlay"></img>
     </ul>
   </section>
   <!-- END: slider
@@ -541,17 +540,16 @@
           <div class="probootstrap-footer-widget">
             <h4 class="heading">About EventSpace.</h4>
             <p>EventSpace was created as a final semester Capstone project for Chris, Leo & Matt as a way to showcase their skills... </p>
-            <p><a href="#">Read more...</a></p>
+            <p><a href="about.html">Read more...</a></p>
           </div>
         </div>
         <div class="col-md-4">
           <div class="probootstrap-footer-widget probootstrap-link-wrap">
             <h4 class="heading">Quick Links</h4>
             <ul class="stack-link">
-              <li><a href="#">Real Estate Listings</a></li>
-              <li><a href="#">Venue Listings</a></li>
-              <li><a href="#">Featured</a></li>
-              <li><a href="#">Create A Listing</a></li>
+              <li><a href="properties.html">Real Estate Listings</a></li>
+              <li><a href="events.html">Venue Listings</a></li>
+              <li><a href="add.html">Create A Listing</a></li>
               <li><a href="#">Sign Up</a></li>
             </ul>
           </div>
@@ -629,6 +627,8 @@
   firebase.initializeApp(firebaseConfig);
 </script>
 
+  <script src="js/detail.js"></script>
+  <script src="js/venueDetail.js"></script>
   <script src="js/search.js"></script>
   <script src="js/scripts.min.js"></script>
   <script src="js/main.min.js"></script>
