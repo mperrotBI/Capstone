@@ -26,7 +26,7 @@ function main(){
     var loc = snap.child("Location").val();
     var img = snap.child("Image").val();
     var listingKey = snap.key;
-    $("#results").append("<div class='probootstrap-card probootstrap-listing'><div class='probootstrap-card-media'><img src='" + img + "' class='img-responsive' alt='Free HTML5 Template by uicookies.com'>" +
+    $("#results").append("<div class='probootstrap-card probootstrap-listing'><div class='probootstrap-card-media'><img src='" + img + "' class='img-responsive' alt='Image Unavailable'>" +
     "<a href='#' class='probootstrap-love'><i class='icon-heart'></i></a></div><div class='probootstrap-card-text'>" +
     "<h2 class='probootstrap-card-heading'><a href='detail.html?i=0/" + listingKey + "'>" +  title + "</a></h2><div class='probootstrap-listing-location'>" +
     "<i class='icon-location2'></i> <span>" + loc + "</span></div><div class='probootstrap-listing-category for-rent'><span>for rent</span></div><div class='probootstrap-listing-price'><strong>$" +
@@ -43,7 +43,7 @@ function main(){
     var loc = snap.child("Location").val();
     var img = snap.child("Image").val();
     var listingKey = snap.key;
-    $("#results2").append("<div class='probootstrap-card probootstrap-listing'><div class='probootstrap-card-media'><<img src='" + img + "' class='img-responsive' alt='Free HTML5 Template by uicookies.com'>" +
+    $("#results2").append("<div class='probootstrap-card probootstrap-listing'><div class='probootstrap-card-media'><<img src='" + img + "' class='img-responsive' alt='Image Unavailable'>" +
     "<a href='#' class='probootstrap-love'><i class='icon-heart'></i></a></div><div class='probootstrap-card-text'>" +
     "<h2 class='probootstrap-card-heading'><a href='detail.html?i=1/" + listingKey + "'>" +  title + "</a></h2><div class='probootstrap-listing-location'>" +
     "<i class='icon-location2'></i> <span>" + loc + "</span></div><div class='probootstrap-listing-category for-rent'><span>for rent</span></div><div class='probootstrap-listing-price'><strong>$" +
@@ -60,7 +60,7 @@ function main(){
     var loc = snap.child("Location").val();
     var img = snap.child("Image").val();
     var listingKey = snap.key;
-    $("#results3").append("<div class='probootstrap-card probootstrap-listing'><div class='probootstrap-card-media'><<img src='" + img + "' class='img-responsive' alt='Free HTML5 Template by uicookies.com'>" +
+    $("#results3").append("<div class='probootstrap-card probootstrap-listing'><div class='probootstrap-card-media'><<img src='" + img + "' class='img-responsive' alt='Image Unavailable'>" +
     "<a href='#' class='probootstrap-love'><i class='icon-heart'></i></a></div><div class='probootstrap-card-text'>" +
     "<h2 class='probootstrap-card-heading'><a href='detail.html?i=2/" + listingKey + "'>" +  title + "</a></h2><div class='probootstrap-listing-location'>" +
     "<i class='icon-location2'></i> <span>" + loc + "</span></div><div class='probootstrap-listing-category for-rent'><span>for rent</span></div><div class='probootstrap-listing-price'><strong>$" +
@@ -87,7 +87,7 @@ function main(){
     var venLoc = snap.child("Location").val();
     var venImg = snap.child("Image").val();
     var venKey = snap.key;
-    $("#results").append("<div class='probootstrap-card probootstrap-listing'><div class='probootstrap-card-media'><img src='" + venImg + "' class='img-responsive' alt='Free HTML5 Template by uicookies.com'>" +
+    $("#results").append("<div class='probootstrap-card probootstrap-listing'><div class='probootstrap-card-media'><img src='" + venImg + "' class='img-responsive' alt='Image Unavailable'>" +
     "<a href='#' class='probootstrap-love'><i class='icon-heart'></i></a></div><div class='probootstrap-card-text'>" +
     "<h2 class='probootstrap-card-heading'><a href='venueDetail.html?i=0/" + venKey + "'>" +  venTitle + "</a></h2><div class='probootstrap-listing-location'>" +
     "<i class='icon-location2'></i> <span>" + venLoc + "</span></div><div class='probootstrap-listing-category for-rent'><span>for rent</span></div><div class='probootstrap-listing-price'><strong>$" +
@@ -104,7 +104,7 @@ function main(){
     var venLoc = snap.child("Location").val();
     var venImg = snap.child("Image").val();
     var venKey = snap.key;
-    $("#results2").append("<div class='probootstrap-card probootstrap-listing'><div class='probootstrap-card-media'><img src='" + venImg + "' class='img-responsive' alt='Free HTML5 Template by uicookies.com'>" +
+    $("#results2").append("<div class='probootstrap-card probootstrap-listing'><div class='probootstrap-card-media'><img src='" + venImg + "' class='img-responsive' alt='Image Unavailable'>" +
     "<a href='#' class='probootstrap-love'><i class='icon-heart'></i></a></div><div class='probootstrap-card-text'>" +
     "<h2 class='probootstrap-card-heading'><a href='venueDetail.html?i=1/" + venKey + "'>" +  venTitle + "</a></h2><div class='probootstrap-listing-location'>" +
     "<i class='icon-location2'></i> <span>" + venLoc + "</span></div><div class='probootstrap-listing-category for-rent'><span>for rent</span></div><div class='probootstrap-listing-price'><strong>$" +
@@ -121,7 +121,7 @@ function main(){
     var venLoc = snap.child("Location").val();
     var venImg = snap.child("Image").val();
     var venKey = snap.key;
-    $("#results3").append("<div class='probootstrap-card probootstrap-listing'><div class='probootstrap-card-media'><img src='" + venImg + "' class='img-responsive' alt='Free HTML5 Template by uicookies.com'>" +
+    $("#results3").append("<div class='probootstrap-card probootstrap-listing'><div class='probootstrap-card-media'><img src='" + venImg + "' class='img-responsive' alt='Image Unavailable'>" +
     "<a href='#' class='probootstrap-love'><i class='icon-heart'></i></a></div><div class='probootstrap-card-text'>" +
     "<h2 class='probootstrap-card-heading'><a href='venueDetail.html?i=2/" + venKey + "'>" +  venTitle + "</a></h2><div class='probootstrap-listing-location'>" +
     "<i class='icon-location2'></i> <span>" + venLoc + "</span></div><div class='probootstrap-listing-category for-rent'><span>for rent</span></div><div class='probootstrap-listing-price'><strong>$" +
